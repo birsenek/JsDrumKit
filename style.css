@@ -1,0 +1,71 @@
+body {
+  background: url(./assets/bg-img.jpg) center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+h1 {
+  color: white;
+  text-decoration: underline;
+}
+
+.keys {
+  display: flex;
+  max-width: 700px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.key {
+  border: 0.4rem solid #00000066;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.1s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  display: flex;
+  flex-direction: column;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  text-shadow: #00000066;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ff2244;
+}
+
+@media(max-width: 665px) {
+    .key {
+        transform: scale(0.5);
+        margin: 0;
+        padding: 0;
+    }
+}
